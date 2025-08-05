@@ -1,0 +1,341 @@
+/* Vault Transfer Plugin Styles */
+
+/* 모달 공통 스타일 */
+.vault-transfer-modal {
+    max-width: 600px;
+    padding: 20px;
+}
+
+.vault-transfer-modal h2,
+.vault-transfer-modal h3 {
+    margin-top: 0;
+    margin-bottom: 16px;
+    color: var(--text-normal);
+}
+
+.vault-transfer-modal p {
+    margin-bottom: 12px;
+    color: var(--text-muted);
+    line-height: 1.4;
+}
+
+/* 파일 선택 영역 */
+.file-select {
+    margin: 20px 0;
+    padding: 16px;
+    background: var(--background-secondary);
+    border-radius: 8px;
+    border: 1px solid var(--background-modifier-border);
+}
+
+.current-file {
+    margin-bottom: 12px;
+    padding: 8px;
+    background: var(--background-primary-alt);
+    border-radius: 4px;
+    border-left: 3px solid var(--interactive-accent);
+}
+
+.current-file strong {
+    color: var(--text-normal);
+}
+
+.current-file span {
+    color: var(--text-muted);
+    font-family: var(--font-monospace);
+    font-size: 0.9em;
+}
+
+/* Vault 목록 스타일 */
+.vault-list {
+    margin: 20px 0;
+    padding: 16px;
+    background: var(--background-secondary);
+    border-radius: 8px;
+    border: 1px solid var(--background-modifier-border);
+}
+
+.vault-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.vault-item:last-child {
+    border-bottom: none;
+}
+
+.vault-item span {
+    font-weight: 500;
+    color: var(--text-normal);
+}
+
+.vault-path {
+    color: var(--text-muted);
+    font-family: var(--font-monospace);
+    font-size: 0.8em;
+}
+
+/* Vault 선택 모달 스타일 */
+.vault-select-modal button {
+    margin-bottom: 8px;
+    padding: 12px 16px;
+    font-size: 14px;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+}
+
+.vault-select-modal button:hover {
+    background: var(--interactive-hover);
+    transform: translateY(-1px);
+}
+
+.vault-select-modal button:active {
+    transform: translateY(0);
+}
+
+/* 경고 메시지 스타일 */
+.mod-warning {
+    color: var(--text-warning) !important;
+    background: var(--background-modifier-error-rgb);
+    padding: 12px;
+    border-radius: 6px;
+    border-left: 3px solid var(--text-warning);
+    margin: 16px 0;
+}
+
+/* 설정 탭 스타일 */
+.vault-paths-container {
+    margin: 16px 0;
+    padding: 16px;
+    background: var(--background-secondary);
+    border-radius: 8px;
+    border: 1px solid var(--background-modifier-border);
+}
+
+.vault-paths-container .setting-item {
+    border-bottom: 1px solid var(--background-modifier-border);
+    padding: 12px 0;
+}
+
+.vault-paths-container .setting-item:last-child {
+    border-bottom: none;
+}
+
+.vault-paths-container .setting-item-name {
+    font-weight: 600;
+    color: var(--text-normal);
+}
+
+.vault-paths-container .setting-item-description {
+    font-family: var(--font-monospace);
+    font-size: 0.85em;
+    color: var(--text-muted);
+    word-break: break-all;
+    margin-top: 4px;
+}
+
+/* 버튼 스타일 개선 */
+.vault-transfer-button {
+    background: var(--interactive-accent);
+    color: var(--text-on-accent);
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.vault-transfer-button:hover {
+    background: var(--interactive-accent-hover);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px var(--shadow-color);
+}
+
+.vault-transfer-button:active {
+    transform: translateY(0);
+}
+
+.vault-transfer-button.mod-warning {
+    background: var(--color-red);
+    color: white;
+}
+
+.vault-transfer-button.mod-warning:hover {
+    background: var(--color-red-hover);
+}
+
+/* 진행 상태 표시 */
+.transfer-progress {
+    margin: 16px 0;
+    padding: 12px;
+    background: var(--background-primary-alt);
+    border-radius: 6px;
+    border-left: 3px solid var(--interactive-accent);
+}
+
+.transfer-progress-bar {
+    width: 100%;
+    height: 4px;
+    background: var(--background-modifier-border);
+    border-radius: 2px;
+    overflow: hidden;
+    margin-top: 8px;
+}
+
+.transfer-progress-fill {
+    height: 100%;
+    background: var(--interactive-accent);
+    transition: width 0.3s ease;
+}
+
+/* 성공/실패 메시지 */
+.transfer-success {
+    color: var(--color-green);
+    background: var(--background-modifier-success-rgb);
+    padding: 8px 12px;
+    border-radius: 4px;
+    border-left: 3px solid var(--color-green);
+    margin: 8px 0;
+}
+
+.transfer-error {
+    color: var(--color-red);
+    background: var(--background-modifier-error-rgb);
+    padding: 8px 12px;
+    border-radius: 4px;
+    border-left: 3px solid var(--color-red);
+    margin: 8px 0;
+}
+
+/* 리본 아이콘 스타일 */
+.vault-transfer-ribbon-icon {
+    color: var(--icon-color);
+    transition: color 0.2s ease;
+}
+
+.vault-transfer-ribbon-icon:hover {
+    color: var(--interactive-accent);
+}
+
+/* 컨텍스트 메뉴 아이템 */
+.menu-item[data-section="vault-transfer"] {
+    border-top: 1px solid var(--background-modifier-border);
+    margin-top: 4px;
+    padding-top: 4px;
+}
+
+/* 토글 스위치 커스터마이징 */
+.setting-item .checkbox-container {
+    margin-right: 12px;
+}
+
+/* 드롭다운 스타일 */
+.setting-item .dropdown {
+    min-width: 120px;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+    .vault-transfer-modal {
+        max-width: 90vw;
+        padding: 16px;
+    }
+    
+    .vault-select-modal button {
+        font-size: 16px;
+        padding: 14px 18px;
+    }
+    
+    .vault-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+    }
+    
+    .vault-path {
+        font-size: 0.75em;
+    }
+}
+
+/* 다크 테마 지원 */
+.theme-dark {
+    --shadow-color: rgba(0, 0, 0, 0.3);
+}
+
+.theme-light {
+    --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+/* 애니메이션 */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.vault-transfer-modal,
+.vault-select-modal {
+    animation: fadeIn 0.2s ease;
+}
+
+/* 포커스 스타일 */
+.vault-transfer-button:focus,
+.vault-select-modal button:focus {
+    outline: 2px solid var(--interactive-accent);
+    outline-offset: 2px;
+}
+
+/* 로딩 스피너 */
+.transfer-loading {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid var(--background-modifier-border);
+    border-radius: 50%;
+    border-top-color: var(--interactive-accent);
+    animation: spin 1s ease-in-out infinite;
+    margin-right: 8px;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* 툴팁 스타일 */
+.vault-transfer-tooltip {
+    position: relative;
+}
+
+.vault-transfer-tooltip::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--background-tooltip);
+    color: var(--text-on-accent);
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+    z-index: 1000;
+}
+
+.vault-transfer-tooltip:hover::after {
+    opacity: 1;
+}

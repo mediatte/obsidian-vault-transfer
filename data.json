@@ -1,0 +1,10 @@
+{
+  "targetVaultPaths": [
+    "C:\\Users\\jlee0\\Documents\\obsidian\\jhl",
+    "C:\\Users\\jlee0\\Documents\\obsidian\\pedagogy",
+    "C:\\Users\\jlee0\\Documents\\obsidian\\research"
+  ],
+  "includeAttachments": true,
+  "preserveMetadata": true,
+  "handleConflicts": "rename"
+}

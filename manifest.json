@@ -1,0 +1,10 @@
+{
+    "id": "vault-transfer",
+    "name": "Vault Transfer",
+    "version": "1.0.0",
+    "minAppVersion": "0.15.0",
+    "description": "Transfer files between different Obsidian vaults with ease. Supports attachments, metadata preservation, and conflict handling.",
+    "author": "mediatte",
+    "authorUrl": "https://github.com/mediatte",
+    "isDesktopOnly": true
+}
